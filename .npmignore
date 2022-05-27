@@ -1,0 +1,7 @@
+src
+example
+webpack.config.js
+package-lock.json
+*.js.map
+__tests__
+coverage

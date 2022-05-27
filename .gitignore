@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+node_modules
+.DS_store
+dist
+/lib
+*.js.map
+/coverage

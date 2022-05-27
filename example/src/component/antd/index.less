@@ -1,0 +1,47 @@
+.shopee-form-item.ant-form-item {
+  .ant-form-item-required {
+    &::before {
+      display: none !important;
+    }
+  }
+  label.ant-form-item-no-colon {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .shopee-form-label-span {
+    white-space: break-spaces;
+    word-break: break-word;
+    line-height: 14px;
+  }
+  .shopee-form-label-span.max-len {
+    max-width: calc(100% - 70px);
+  }
+  .shopee-form-option {
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.38);
+  }
+  .shopee-form-des {
+    margin-left: 4px;
+    color: rgba(0, 0, 0, 0.38);
+  }
+  .shopee-form-help {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.shopee-ant-table .ant-spin-container {
+  display: flex;
+  flex-direction: column-reverse;
+  .ant-table-pagination-left {
+    float: none;
+    text-align: left;
+  }
+  .ant-table-pagination-right {
+    float: none;
+    text-align: right;
+  }
+}

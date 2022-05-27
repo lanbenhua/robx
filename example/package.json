@@ -1,0 +1,39 @@
+{
+  "name": "di-dataservice-fe",
+  "version": "1.0.0",
+  "description": "",
+  "indexHash": "2d2900f19d8984d680ad",
+  "scripts": {
+    "start": "DEV_MODE=true webpack-dev-server",
+    "eslint": "eslint --max-warnings 0 --ext .ts,.js ./",
+    "swagger": "npx openapi-typescript http://localhost:9901/api/v2/api-docs --output ./src/types/swagger-type.ts",
+    "test-build": "rm -rf dist && JENKINS_ENV=test NODE_ENV=production webpack",
+    "uat-build": "rm -rf dist && JENKINS_ENV=uat NODE_ENV=production webpack",
+    "staging-build": "rm -rf dist && JENKINS_ENV=staging NODE_ENV=production webpack",
+    "build": "rm -rf dist && NODE_ENV=production NO_CONSOLE=true webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ant-design/icons": "4.4.0",
+    "@shopee-data/tunnel": "latest",
+    "@shopee-data/webpack-base-config": "latest",
+    "@types/lodash": "^4.14.170",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.7",
+    "antd": "4.9.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run eslint"
+    ],
+    "*.{less,json,html}": [
+      "prettier --write"
+    ]
+  }
+}
