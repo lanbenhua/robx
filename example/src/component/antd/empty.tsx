@@ -6,7 +6,7 @@ export default function EmptyContent(p: EmptyProps) {
   const { children, ...others } = p;
   return (
     <Empty
-      image="https://static.idata-fe.shopee.io/data_engineering_data_static_file_0601e10c506d2f82cf4a/no-data.svg"
+      image=""
       description="No Data"
       {...others}
     >

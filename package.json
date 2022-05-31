@@ -13,10 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.garena.com/shopee-data/languages"
+    "url": "https://github.com/lanbenhua/robx"
   },
   "devDependencies": {
-    "@shopee-data/reaction": "latest",
     "@types/jest": "^27.4.0",
     "@types/react": "^16.14.21",
     "@types/react-test-renderer": "^17.0.1",

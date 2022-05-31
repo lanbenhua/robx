@@ -1,6 +1,0 @@
-node_modules
-.DS_store
-dist
-/lib
-*.js.map
-/coverage
